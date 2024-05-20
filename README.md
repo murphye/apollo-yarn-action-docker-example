@@ -1,23 +1,14 @@
 ## Inigo
 
-## Node Version
+## Docker Build
 
 ```
-node --version
-v20.11.0
+docker build -t apollo-yarn-action-docker-example .
 ```
 
-# Build and Run
-
-`inigo.js` and `inigo-darwin-arm64` already set up.
+ ## Docker Run
 
 ```
 INIGO_SERVICE_TOKEN=ey...
-yarn install
-yarn run build
-yarn run dev
+docker run -p 4000:4000 -e INIGO_SERVICE_TOKEN=$INIGO_SERVICE_TOKEN apollo-yarn-action-docker-example
 ```
-
- ```
-docker build -t apollo-yarn-action-docker-example .
- ```
