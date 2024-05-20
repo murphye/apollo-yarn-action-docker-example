@@ -5,7 +5,7 @@
     "scripts": {
       "dev": "nodemon",
       "lint": "eslint \"src/**/*.ts\"",
-      "build": "yarn clean && esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/index.js",
+      "build": "yarn clean && esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/index.js  --external:@inigolabs/ref-napi --external:@inigolabs/ffi-napi --external:inigo.js --external:inigo-darwin-arm64 --external:inigo-darwin-amdm64 --external:inigo-linux-amd64 --external:inigo-linux-arm64 --external:graphql && mkdir dist/node_modules && cp -R node_modules/debug node_modules/node-gyp-build node_modules/ref-struct-di node_modules/ms node_modules/inigo* node_modules/@inigolabs node_modules/graphql dist/node_modules/",
       "generate": "yarn generate:codegen && yarn generate:custom",
       "generate:codegen": "graphql-codegen --verbose --config codegen.yml",
       "generate:custom": "ts-node src/scripts/generate/index.ts",
@@ -28,6 +28,9 @@
       "axios": "1.6.2",
       "graphql": "16.8.1",
       "inigo-darwin-arm64": "0.30.1",
+      "inigo-darwin-amd64": "0.30.1",
+      "inigo-linux-arm64": "0.30.1",
+      "inigo-linux-amd64": "0.30.1",
       "inigo.js": "0.30.1"
     },
     "devDependencies": {

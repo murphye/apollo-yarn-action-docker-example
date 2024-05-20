@@ -4161,10 +4161,25 @@ inherits@2, inherits@2.0.4, inherits@^2.0.1, inherits@^2.0.3, inherits@^2.0.4:
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
+inigo-darwin-amd64@0.30.1:
+  version "0.30.1"
+  resolved "https://registry.yarnpkg.com/inigo-darwin-amd64/-/inigo-darwin-amd64-0.30.1.tgz#16d5bfa08af666529d4430faab503ccb1b9d19d9"
+  integrity sha512-Q2GzNRxEmnGh0jXbKwEueUM4PnO1t8fT8Gj2rZmTu0d88U0fmuOg9p2b97dpJA94eRYQ41pRB1A0J4VnJT0J5Q==
+
 inigo-darwin-arm64@0.30.1:
   version "0.30.1"
   resolved "https://registry.yarnpkg.com/inigo-darwin-arm64/-/inigo-darwin-arm64-0.30.1.tgz#9be4627eea26d6ff4308d691bdd6ed0eff4b9cbb"
   integrity sha512-FXQ2CmTil1H4XryylbLBVNjxgxDZut/4VWXXIALcho6hY+xSA/5qCJn/X4uxZzKShEHrB0jdpydTokt+6kTIfw==
+
+inigo-linux-amd64@0.30.1:
+  version "0.30.1"
+  resolved "https://registry.yarnpkg.com/inigo-linux-amd64/-/inigo-linux-amd64-0.30.1.tgz#4383784cbdd7f1f5b40dbb854a45f6f95798a32d"
+  integrity sha512-TSc+/znFTUmXqP6zm6cTOfnYK05pLJA0Op6yhxXE8Z7FbtBOVDcaijJkWv5YpIPDcpTCaqz6KI34JJuDoMjbNQ==
+
+inigo-linux-arm64@0.30.1:
+  version "0.30.1"
+  resolved "https://registry.yarnpkg.com/inigo-linux-arm64/-/inigo-linux-arm64-0.30.1.tgz#d63c225807c8da238708fce716b12e09e674cd3f"
+  integrity sha512-hlBlA8VhLFprLXPig+ZSbUk5uYEqrFR62uhLj/Q0oH4XaaCzwQ41xlIQxxiwaP+Bh2ecqmlDSU0Hgo7mCrB8SQ==
 
 inigo.js@0.30.1:
   version "0.30.1"
@@ -5853,6 +5868,7 @@ string-env-interpolation@1.0.1, string-env-interpolation@^1.0.1:
   integrity sha512-78lwMoCcn0nNu8LszbP1UA7g55OeE4v7rCeWnM5B453rnNr4aq+5it3FEYtZrSEiMvHZOZ9Jlqb0OD0M2VInqg==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -5878,6 +5894,7 @@ string_decoder@^1.1.1:
     safe-buffer "~5.2.0"
 
 "strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+  name strip-ansi-cjs
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
@@ -6334,6 +6351,7 @@ word-wrap@^1.2.5:
   integrity sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==

@@ -18,4 +18,6 @@ yarn run build
 yarn run dev
 ```
 
- 
+ ```
+docker build -t apollo-yarn-action-docker-example .
+ ```
