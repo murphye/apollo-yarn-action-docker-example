@@ -2,8 +2,11 @@ FROM node:20.11.1 AS base
 RUN apt update -y
 RUN apt upgrade -y
 
+# Copy the project to the builder image
 COPY . .
+# Remove pre-existing node_modules; need to build specifically for Linux
 RUN rm -R node_modules
+# Install the dependencies and run the build
 RUN yarn install
 RUN yarn run build
 
