@@ -1,4 +1,4 @@
-FROM node:20.11.1 AS base
+FROM node:20.11.1 AS build
 RUN apt update -y
 RUN apt upgrade -y
 
@@ -12,12 +12,14 @@ RUN yarn run build
 
 #############
 
-FROM base as runner
+FROM node:20.11.1
+RUN apt update -y
+RUN apt upgrade -y
 
 # below line as a temporary workaround to fix CVE-2022-25881
 RUN rm -Rf /usr/local/lib/node_modules/npm/node_modules/http-cache-semantics
 
-COPY --from=base dist/ app/
+COPY --from=build dist/ app/
 
 WORKDIR /app
 
