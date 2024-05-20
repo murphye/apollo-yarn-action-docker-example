@@ -13,6 +13,7 @@ v20.11.0
 
 ```
 INIGO_SERVICE_TOKEN=ey...
+yarn install
 yarn run build
 yarn run dev
 ```
