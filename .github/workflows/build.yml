@@ -1,6 +1,6 @@
 name: 'Build docker - simple'
 on:
-  workflow_call: 
+  workflow_dispatch: 
     inputs:
       LOCAL_IMAGE_NAME:
         type: string
