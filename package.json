@@ -5,7 +5,7 @@
     "scripts": {
       "dev": "nodemon",
       "lint": "eslint \"src/**/*.ts\"",
-      "build": "yarn clean && esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/index.js --external:@inigolabs/ref-napi --external:@inigolabs/ffi-napi --external:inigo.js --external:inigo-darwin-arm64 --external:inigo-darwin-amdm64 --external:inigo-linux-amd64 --external:inigo-linux-arm64 --external:graphql && mkdir dist/node_modules && cp -R node_modules/debug node_modules/node-gyp-build node_modules/ref-struct-di node_modules/ms node_modules/inigo* node_modules/@inigolabs node_modules/graphql node_modules/graphql-request dist/node_modules/",
+      "build": "yarn clean && esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/index.js --packages=external",
       "generate": "yarn generate:codegen && yarn generate:custom",
       "generate:codegen": "graphql-codegen --verbose --config codegen.yml",
       "generate:custom": "ts-node src/scripts/generate/index.ts",
@@ -48,7 +48,7 @@
       "@typescript-eslint/eslint-plugin": "5.40.1",
       "@typescript-eslint/parser": "5.40.1",
       "shx": "0.3.4",
-      "esbuild": "0.15.12",
+      "esbuild": "0.21.3",
       "eslint": "8.37.0",
       "nodemon": "3.0.1",
       "ts-node": "10.9.1",
