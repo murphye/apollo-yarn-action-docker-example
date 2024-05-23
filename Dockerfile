@@ -19,8 +19,8 @@ RUN apt upgrade -y
 # below line as a temporary workaround to fix CVE-2022-25881
 RUN rm -Rf /usr/local/lib/node_modules/npm/node_modules/http-cache-semantics
 
-COPY --from=build dist/ app/
-COPY --from=build node_modules/ app/node_modules
+COPY --from=build dist/ app
+COPY --from=build dist/node_modules/ app/node_modules
 
 WORKDIR /app
 
