@@ -21,6 +21,7 @@ RUN rm -Rf /usr/local/lib/node_modules/npm/node_modules/http-cache-semantics
 
 COPY --from=build dist/ app
 COPY --from=build dist/node_modules/ app/node_modules
+COPY --from=build inigo/ .
 
 WORKDIR /app
 

@@ -5,7 +5,7 @@
     "scripts": {
       "dev": "nodemon",
       "lint": "eslint \"src/**/*.ts\"",
-      "build": "yarn clean && esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/index.js --external:@inigolabs/ref-napi --external:@inigolabs/ffi-napi --external:inigo.js --external:inigo-darwin-arm64 --external:inigo-darwin-amdm64 --external:inigo-linux-amd64 --external:inigo-linux-arm64 --external:graphql && mkdir dist/node_modules && cp -r node_modules dist/",
+      "build": "yarn clean && esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/index.js --external:@inigolabs/ref-napi --external:@inigolabs/ffi-napi --external:inigo-darwin-arm64 --external:inigo-darwin-amd64 --external:inigo-linux-amd64 --external:inigo-linux-arm64 --external:ms && mkdir dist/node_modules && cp -r node_modules/@inigolabs node_modules/debug node_modules/node-gyp-build node_modules/node-addon-api node_modules/ref-struct-di node_modules/get-uv-event-loop-napi-h node_modules/get-symbol-from-current-process-h node_modules/ms dist/node_modules && mkdir inigo && cp -r node_modules/inigo-* inigo",
       "generate": "yarn generate:codegen && yarn generate:custom",
       "generate:codegen": "graphql-codegen --verbose --config codegen.yml",
       "generate:custom": "ts-node src/scripts/generate/index.ts",
